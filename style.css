@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    text-align: center;
+    position: absolute;
+    padding: 30px;
+}
+
+table {
+    position: relative;
+}
+
+td {
+    height: 40px;
+    padding: 3px;
+}
+
+button {
+    height: 40px;
+    width: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+}
+
+button:hover {
+    border: black solid 1px;
+}
+
+button:focus {
+    border: black solid 1px;
+    background-color: white;
+}
+
+.reactive-non-metals {
+    background-color: #e2eeff;
+    color: #0060f0;
+}
+
+.reactive-non-metals:focus, .reactive-non-metals:hover {
+    border: #0060f0 solid 1px;
+}
+
+.alkali-metals {
+    background-color: #d8f8ff;
+    color: #00758c;
+}
+
+.alkali-metals:focus, .alkali-metals:hover{
+    border: #00758c solid 1px;
+}
+
+.alkaline-earth-metals {
+    background-color: #ffe7e7;
+    color: #d60024;
+}
+
+.alkaline-earth-metals:focus, .alkaline-earth-metals:hover {
+    border: #d60024 solid 1px;
+}
+
+.transition-metals {
+    background-color: #f3e8fd;
+    color: #6232ec;
+}
+
+.transition-metals:focus, .transition-metals:hover {
+    border: #6232ec solid 1px;
+}
+
+.post-transition-metals {
+    background-color: #d6f9e8;
+    color: #227754;
+}
+
+.post-transition-metals:focus, .post-transition-metals:hover {
+    border: #227754 solid 1px;
+}
+
+.metalloides {
+    background-color: #fef7e0;
+    color: #945700;
+}
+
+.metalloides:focus, .metalloides:hover {
+    border: #945700 solid 1px;
+}
+
+.noble-gases {
+    background-color: #ffe7eb;
+    color: #cd1d5e;
+}
+
+.noble-gases:focus, .noble-gases:hover {
+    border: #cd1d5e solid 1px;
+}
+
+.lanthanides {
+    background-color: #dff3ff;
+    color: #003355;
+}
+
+.lanthanides:focus, .lanthanides:hover {
+    border: #003355 solid 1px;
+}
+
+.actinides {
+    background-color: #ffe6d4;
+    color: #c73200;
+}
+
+.actinides:focus, .actinides:hover {
+    border: #c73200 solid 1px;
+}
+
+.element {  
+    position: absolute;
+    top: 20px;
+    left: 160px;
+    width: 90px;
+    height: 90px;
+    z-index: 99;
+    display: none;
+    border: solid 1px;
+    background-color: white;
+}
+
+#atomic-number {
+    text-align: left;
+    font-size: 0.8em;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+}
+
+#symbol {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#name {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+#h:focus .element,
+#he:focus .element,
+#li:focus .element,
+#be:focus .element,
+#b:focus .element,
+#c:focus .element,
+#n:focus .element,
+#o:focus .element,
+#f:focus .element,
+#ne:focus .element,
+#na:focus .element,
+#mg:focus .element,
+#al:focus .element,
+#si:focus .element,
+#p:focus .element,
+#s:focus .element,
+#cl:focus .element,
+#ar:focus .element,
+#k:focus .element,
+#ca:focus .element,
+#sc:focus .element,
+#ti:focus .element,
+#v:focus .element,
+#cr:focus .element,
+#mn:focus .element,
+#fe:focus .element,
+#co:focus .element,
+#ni:focus .element,
+#cu:focus .element,
+#zn:focus .element,
+#ga:focus .element,
+#ge:focus .element,
+#as:focus .element,
+#se:focus .element,
+#br:focus .element,
+#kr:focus .element,
+#rb:focus .element,
+#sr:focus .element,
+#yb:focus .element,
+#zr:focus .element,
+#nb:focus .element,
+#mo:focus .element,
+#tc:focus .element,
+#ru:focus .element,
+#rh:focus .element,
+#pd:focus .element,
+#ag:focus .element,
+#cd:focus .element,
+#in:focus .element,
+#sn:focus .element,
+#sb:focus .element,
+#te:focus .element,
+#i:focus .element,
+#xe:focus .element,
+#cs:focus .element,
+#ba:focus .element,
+#la:focus .element,
+#hf:focus .element,
+#ta:focus .element,
+#w:focus .element,
+#re:focus .element,
+#os:focus .element,
+#ir:focus .element,
+#pt:focus .element,
+#au:focus .element,
+#hg:focus .element,
+#tl:focus .element,
+#pb:focus .element,
+#bi:focus .element,
+#po:focus .element,
+#at:focus .element,
+#rn:focus .element,
+#fr:focus .element,
+#ra:focus .element,
+#ac:focus .element,
+#rf:focus .element,
+#db:focus .element,
+#sg:focus .element,
+#bh:focus .element,
+#hs:focus .element,
+#mt:focus .element,
+#ds:focus .element,
+#rg:focus .element,
+#cn:focus .element,
+#nh:focus .element,
+#fl:focus .element,
+#mc:focus .element,
+#lv:focus .element,
+#ts:focus .element,
+#og:focus .element,
+#ce:focus .element,
+#pr:focus .element,
+#nd:focus .element,
+#pm:focus .element,
+#sm:focus .element,
+#eu:focus .element,
+#gd:focus .element,
+#tb:focus .element,
+#dy:focus .element,
+#ho:focus .element,
+#er:focus .element,
+#tm:focus .element,
+#yb:focus .element,
+#lu:focus .element,
+#th:focus .element,
+#pa:focus .element,
+#u:focus .element,
+#np:focus .element,
+#pu:focus .element,
+#am:focus .element,
+#cm:focus .element,
+#bk:focus .element,
+#cf:focus .element,
+#es:focus .element,
+#fm:focus .element,
+#md:focus .element,
+#no:focus .element,
+#lr:focus .element {
+    display: block;
+}
+
+.families1,
+.families2,
+.families3 {
+    padding: 32px;
+}
+
+.families1 button,
+.families2 button,
+.families3 button {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border-radius: 50%;
+    cursor: default;
+}
+
+.label-reactive-non-metals button {
+    border: #0060f0 solid 2px;
+    background-color: #e2eeff;
+}
+
+.label-noble-gases button {
+    border: #cd1d5e solid 2px;
+    background-color: #ffe7eb;
+}
+
+.label-alkali-metals button {
+    border: #00758c solid 2px;
+    background-color: #d8f8ff;
+}
+
+.label-alkali-earth-metals button {
+    border: #d60024 solid 2px;
+    background-color: #ffe7e7;
+}
+
+.label-metalloides button {
+    border: #945700 solid 2px;
+    background-color: #fef7e0;
+}
+
+.label-post-transition-metals button {
+    border: #227754 solid 2px;
+    background-color: #d6f9e8;
+}
+
+.label-transition-metals button {
+    border: #6232ec solid 2px;
+    background-color: #f3e8fd;
+}
+
+.label-lanthanides button {
+    border: #003355 solid 2px;
+    background-color: #dff3ff;
+}
+
+.label-actinides button {
+    border: #c73200 solid 2px;
+    background-color: #ffe6d4;
+}
+
+.label-unknown button {
+    border: solid 2px;
+}
+
+.label-reactive-non-metals,
+.label-noble-gases,
+.label-alkali-metals,
+.label-alkali-earth-metals,
+.label-metalloides,
+.label-post-transition-metals,
+.label-transition-metals,
+.label-lanthanides,
+.label-actinides,
+.label-unknown {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.families {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
