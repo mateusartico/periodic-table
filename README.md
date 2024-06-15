@@ -31,7 +31,7 @@ Contributions to enhance this project are welcome! Whether it's improving the de
 
 ## License
 
-This project is licensed under the MIT License. You are free to use, modify, and distribute this Interactive Periodic Table according to the terms of the license agreement.
+This project is licensed under the [MIT License](https://github.com/mateusartico/periodic-table/blob/main/LICENSE). You are free to use, modify, and distribute this Interactive Periodic Table according to the terms of the license agreement.
 
 ## Disclaimer
 
